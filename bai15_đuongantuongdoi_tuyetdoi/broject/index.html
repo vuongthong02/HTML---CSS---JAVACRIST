@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 15 đường dẫn tương đối, tuyệt đối</title>
+  </head>
+  <!-- - đường dẫn tương đối và tuyệt đối dùng để dẫn tới các thư mục trong máy 
+
+  - đường dẫn tuyệt đối 
+    + ký hiệu ./
+        Đường dẫn tương đối chỉ định vị trí của một tệp hoặc thư mục dựa trên vị trí 
+        hiện tại của tệp đang thực thi hoặc tệp mà nó được sử dụng trong. Điều này có 
+        nghĩa là đường dẫn tương đối sẽ được xây dựng dựa trên vị trí của tệp hiện tại 
+        hoặc thư mục hiện tại.
+      vd: trong folder broject có file index.html  Mà ở đây ta đang sử dụng file index.html
+          nên khi dùng đường dẫn tương đối thì nó sẽ mặc định trỏ tới các file 
+          con nằm trong folder broject  
+
+    + ../ dùng  trỏ tới các file thư mục trước nó 1 cấp
+       vd: dùng ./ là trỏ tới các file con nằm trong folder broject. muốn trỏ tới các file
+           trên nó 1 cấp như broject hặc baby.jpg ta dùng ../ mỗi lần dùng ../ là trỏ lên
+           1 cấp  
+      
+  - đường dẫn tuyệt đối
+    + ký hiệu /
+        Đường dẫn tuyệt đối cung cấp địa chỉ đầy đủ đến tệp hoặc thư mục, không phụ thuộc vào vị trí hiện tại 
+        của tệp hoặc thư mục. Điều này có nghĩa là bạn sẽ chỉ định đường dẫn từ gốc hoặc từ một vị trí cố 
+        định trên hệ thống tệp của bạn.  
+      vd: khi ta dùng / thì nó sẽ trỏ tới thăng broject và baby.jpg luôn chứ không quan
+          tâm tới việc đang thực thi lệnh trên file nào -->
+
+  <body>
+    <p>Đường dãn tương đối</p>
+    <img src="./boy.jpg" alt="baby" />
+
+    <p>đường dãn tuyệt đối</p>
+    <img src="/baby.jpg" alt="" />
+
+    <p>đường dẫn tuyệt đối và at video</p>
+    <video width="250" src="/viddeo.mp4/0113.mp4" controls></video>
+  </body>
+</html>

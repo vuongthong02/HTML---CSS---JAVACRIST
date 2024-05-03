@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 13 thẻ a</title>
+  </head>
+  <!-- - thẻ a dùng để liên kết sđt,mail,đường linh...
+       - <a href="link" target=".." : trong thẻ a thêm target = " blank":mở linh ở tab mới
+                                                     target = " self":mở linh ở tab hiện hành
+       - tel:... liên kết số điện thoại 
+         vd: <a href="tel:0347442756">gọi tôi</a> bấm vào gọi tôi thì trình duyệt trỏ tới sđt trong ""  
+       - mailto:.... trỏ tới gmail 
+      vd: <a href="mailto:vuongducthong.chmarket@gmail.com">gửi mail cho tôi</a>
+         bấm vào gửi mai cho tôi thì trình duyệt trỏ tới gmail trong "" -->
+  <body>
+    <a href="">không điền gì trong "" lag mở lại trang</a><br />
+    <a href="#"> điền thăng trong "" là trở về đầu trang</a><br />
+    <a href="https://www.youtube.com/watch?v=d5Jh9iz0mtY"
+      >Mở link bằng tab hiện hành</a
+    ><br />
+    <a href="https://www.youtube.com/watch?v=d5Jh9iz0mtY" target="_blank"
+      >mở link bằng tab mới</a
+    ><br />
+    <a href="https://www.youtube.com/watch?v=d5Jh9iz0mtY" target="_self">
+      mở link bằng tab hiện hành </a
+    ><br />
+    <a href="tel:0347442756">gọi tôi </a><br />
+    <a href="mailto:Vuongducthong02@gmail.com">gửi mail cho tôi</a>
+
+    <!-- 
+    - cc: là danh sách email nhận được bản sao của thư nhưng người nhận được thư
+          sẽ biết được là thư này gửi cho những địa chỉ email nào 
+    - bcc: là danh sách email nhận được bản sao của thư nhưng người nhận được thư sẽ không biết thư
+           này gửi cho những địa chỉ email nào 
+
+    - subject: là phần tiêu đề của thư 
+        vd:<a href="mailto:Vuongducthong02@gmail.com?subject=ê a ơi">gửi mail</a>
+
+    - body: là phần nội dung của thư 
+        vd:<a href="mailto:Vuongducthong02@gmail.com?body=yêu anh">gửi mail</a>
+
+    - ? : dấu phân cách giữ cụm tham số và mailto
+         vd:<a href="mailto:Vuongducthong02@gmail.com?cc=buimaianh2803@gmail.com">gửi mail</a>
+    - & : dấu phân cách giữ cụm tham số với nhau 
+         vd:<a href="mailto:Vuongducthong02@gmail.com?cc=buimaianh@gmail.com&bcc=aloha@gmail.com">gửi mail</a>
+
+    - muốn gửi cho nhiều người trong tham số thì dùng dấu , 
+         vd:<a href="mailto:Vuongducthong02@gmail.com?cc=buimaianh@gmail.com,momo@gmail.com">gửi mail</a>
+
+    CHÚ Ý: 
+    - các dấu ? hoặc & phân cách giữ mailto và các phần tham số  phải viết liền không được cách -->
+  </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 14 thẻ img</title>
+  </head>
+  <body>
+    <h1>bộ sưu tập ảnh</h1>
+
+    <!-- khi ảnh k lỗi gì nhưng k dùng thuộc tính kích thước -->
+    <img src="img/dog_and_cat.jpg" alt="hình ảnh chó và mèo" />
+
+    <!-- khi ảnh bị lỗi và hiển thị nội dung trong alt -->
+    <img src="img/dog_and_cat" alt="hình ảnh chó và mèo" />
+
+    <!--  khi dùng cả 2 ràng buộc height và width  -->
+    <img
+      src="img/dog_and_cat.jpg"
+      alt="hình ảnh chó và mèo"
+      width="100"
+      height="50"
+    />
+
+    <!-- khi chỉ dùng 1 ràng buộc width hoặc height, chiều còn lại tự định dạng -->
+    <img src="img/dog_and_cat.jpg" width="100" alt="" />
+
+    <!-- khi lấy % của ảnh ban đầu -->
+    <img src="img/dog_and_cat.jpg" width="20%" alt="" title="ảnh dog và cat" />
+  </body>
+</html>
+<!-- - thẻ img là 1 thẻ tự đóng ( self closing tag) dùng để hiển thị hình ảnh trên website
+- src: là thuộc tính được dùng để chỉ định đường dẫn
+- alt: là thuộc tính để hiển thị tex box khi ảnh bị lỗi.
+      vd: khi ảnh bị lỗi thì chỗ ảnh sẽ hiển thị thông tin tex box do người lập nhập vào 
+- width : dùng mô tả chiều rộng cho ảnh 
+- height : dùng mô tả chiều cao của ảnh 
+- title dùng hiển thị tiêu đề khi ta để chuột vào ảnh
+
+* LƯU Ý:
+- không nên dùng  cả 2 thuộc tính width và height  vì khi dùng cả 2 thuộc tính thì ảnh
+  sẽ bị mặc định bởi kích thước đó nên ảnh dễ bị méo và vỡ
+- nên dùng 1 thuộc tính width hặc height để ràng buộc ảnh, chiều còn lại sẽ tự căn theo
+  tỷ lệ  -->
