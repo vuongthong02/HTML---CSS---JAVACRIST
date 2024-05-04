@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nhánh main</title>
+  </head>
+  <body>
+    <h1>nhánh main</h1>
+    <!-- 
+    - XÓA LỊCH SỬA DÙNG LỆNH : clear
+
+    - KIỂM TRA XEM CÓ BAO NHIÊU NHÁNH TRONG DỰ ÁN : git branch -a
+         vd:$ git branch -a   
+            * main  
+           remotes/origin/main
+      gi lệnh git branch -a sau đó xuất hiện dòng * main và dòng remotes/origin/main
+      tức là chỉ có 1 nhánh main và ta  đang đứng ở nhánh main, ở remotes cũng chỉ có 
+      1 nhánh main  ( remotes là ở trên github)
+
+    - TẠO NHÁNH MỚI DÙNG: git branch -c (tên nhánh muốn tạo)  
+       vd: git branch -c congviec1
+
+     *LƯU Ý: nếu dùng git branch -c (tên nhánh muốn tạo) thì khi tạo nhánh mới con trỏ * vẫn ở
+            nhánh main tức là khi viết code vẫn viết ở trên nhánh main chứ không phải 
+            viết ở nhánh vừa tạo. Muốn chuyển sang nhánh vừa tạo để thực hiện code
+            dùng lệnh: git checkout ( tên nhánh vừa tạo). 
+        +) nhánh main là nhánh mặc định khi ta kết nối với github
+        +) code của mỗi nhánh là riêng biệt k liên quan đến nhau 
+          vd: có 2 nhánh là main và congviec1 đều có code <h2> tôi là tôi </h2>
+              thay đổi code ở nhánh main ( thêm thẻ h2 là tôi mới học web)
+                  <h2> tôi mới học web </h2>
+              khi chuyển sang nhánh conviec1 thì code không thay đổi mã vẫn giữ nguyên 
+              code ban đầu 
+
+    - TẠO NHÁNH MỚI MÀ CON TRỎ CHUYỂN TỚI NHÁNH ĐÓ LUÔN: git checkout -b (tên nhánh muốn tạo)
+          vd: git checkout -b congviec2
+              
+              
+    - ĐẨY CODE CỦA CÁC NHÁNH LÊN GITHUB:  git push -u origin ( tên nhánh muốn đẩy code)
+    
+    - XÓA NHÁNH TRÊN MÁY TÍNH: git branch -d (tên nhánh muốn xóa)
+     LƯU Ý:
+     +) không thể xóa khi ta đứng tại nhánh đó
+        vd: đứng ở nhánh congviec1 thì k thể xóa nhánh congviec1 mà phải đứng ở nhánh khác
+          mới xóa được 
+     +) không thể xóa khi nhánh đã commit nhưng chưa bush lên github
+         vd: nhánh congviec1 sửa code nhưng chỉ mới thực hiện commit( lệnh lưu trữ thay đổi)
+             mà chưa thực hiện lệnh git ]push ( lệnh thay đổi và đẩy lên github) 
+        nếu cố tình xóa thì dùng lệnh git branch -D ( tên nhánh muốn xóa)
+
+    - XÓA CÁC NHÁNH TRONG GITHUB:  git push -d origin (tên nhánh muốn xóa)
+       vd: git push -d origin congviec1
+     
+-->
+  </body>
+</html>
