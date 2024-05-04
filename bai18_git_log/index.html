@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>git log</title>
+  </head>
+  <body>
+    <h1>tiêu đề</h1>
+
+    <!-- 
+    - KIỂM TRA XEM CÓ BAO NHIÊU LẦN COMMIT LÊN GITHUB DÙNG : git log 
+         vd: $ git log
+             commit 82b4e98f68aa83f5998cc933fac6956b1a0ed42d (HEAD -> main, origin/main)
+            Author: Duc thong <vuongducthong02@gmail.com>
+            Date:   Sat May 4 22:11:27 2024 +0700
+              sl2
+       khi ta dùng git log thì sẽ xuất ra chi tiết ngày giờ... ta commit code lên github
+    
+    - LƯU Ý: 
+     + Vì xuất ra chi tiết các lần commit nên nội dung dài, muốn biết hết các lần commit ta 
+        dùng enter đến khi nào xuất hết thông tin các lần commit. 
+     + muốn thoát git log dùng lệnh Q
+
+    - KIỂM TRA CÁC LẦN COMMIT RÚT GỌN : git log --oneline
+        vd: $ git log --oneline
+          82b4e98 (HEAD -> main, origin/main) sl2
+          3412e7a sl1
+          3e58ca6 first commit
+      CHÚ Ý: khi dùng lệnh này thì chỉ xuất ra thông tin commit gồm id + tên của lần commit
+    
+    - MUỐN QUAY VỀ CODE CỦA LẦN COMMIT NÀO THÌ DÙNG: git checkout + id lần commit đó
+        vd: git checkout 3412e7a
+
+      LƯU Ý: khi muốn quay về code của lần commit nào đó thì ta phải commit hết rồi mới
+           quay về được
+        vd: ta sửa code mà chưa commit thì không thể dùng lệnh git checkout + id được 
+    
+    - TẠO NHÁNH MỚI CHO CODE QUÁ KHỨ: git checkout -b ( tên nhánh muốn tạo)
+       vd:  git checkout -b congviec1
+     LƯU Ý:
+      +) trước khi tạo nhánh mới cho code quá khư ta cần chuyển về code quá khứ.
+         muốn chuyển về code quá khứ dùng (git checkout + id). 
+         muốn biết id của các lần commit dùng ( git log --oneline)
+    
+    - DẨY NHÁNH VỪA TẠO LÊN GITHUB: git push -u origin ( tên nhánh muốn đẩy)
+
+    
+-->
+  </body>
+</html>
