@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bài 22: colspan và rowspan</title>
+  </head>
+  <body>
+    <!-- 
+        - colspan: dùng để chỉ định phần tử chiếm bao nhiêu cột
+          vd: <th colspan="2">sản phẩm</th>
+              tức là ô sản phẩm chiếm 2 cột
+
+        - Rowspan: dùng để chỉ định phần tử chiếm bao nhiêu hàng
+           vd: <td rowspan="2">sản phẩm</td>
+              tức là ô sản phẩm chứa 2 dòng
+     -->
+
+    <!-- 
+        bài tập: sử dụng kiến thức đã học thiết kế bảng sau
+      -->
+    <img
+      src="img/Screenshot 2024-05-14 223817.jpg"
+      alt="ảnh bài tập"
+      width="360"
+      title="ảnh bài tập"
+    />
+
+    <h1>GIẢI</h1>
+    <table>
+      <!--  thêm thẻ 
+                <colgroup>
+                      <col style="background-color: màu muốn chọ" span="số ô muốn hiển thị màu" /> 
+                </colgroup>   để chọn màu cho table-->
+      <colgroup>
+        <col style="background-color: antiquewhite" span="3" />
+
+        <!-- dùng thẻ THEAD khai báo phần tiêu đề bảng -->
+        <thead>
+          <tr>
+            <th>TÊN SẢN PHẨM</th>
+            <th>GIÁ SẢN PHẨM</th>
+            <th>SỐ LƯỢNG CÒN LẠI</th>
+          </tr>
+        </thead>
+        <!--  dùng thẻ TBODY khai báo phần thân bảng -->
+        <tbody>
+          <!-- dữ liệu dòng 1 -->
+          <tr>
+            <td>ÁO THUN NAM</td>
+            <td>100.000vnđ</td>
+            <td>50</td>
+          </tr>
+          <!-- dữ liệu dòng 2 -->
+          <tr>
+            <td>QUẦN THUN NỮ</td>
+            <td>200.000vnđ</td>
+            <td>20</td>
+          </tr>
+          <!-- dữ liệu dòng 3 -->
+          <tr>
+            <td>GIÀY THỂ THAO</td>
+            <td>300.000vnđ</td>
+            <td>30</td>
+          </tr>
+        </tbody>
+        <!-- dùng TFOOT để khai báo phần cuối bảng -->
+        <tfoot>
+          <tr>
+            <td>REMARK</td>
+            <!-- dùng colspan để khai báo ô " chỉ thống kê sp trong kho" chiếm 2 cột -->
+            <td colspan="2">CHỈ THỐNG KÊ SẢN PHẨM TRONG KHO</td>
+          </tr>
+        </tfoot>
+      </colgroup>
+    </table>
+  </body>
+</html>

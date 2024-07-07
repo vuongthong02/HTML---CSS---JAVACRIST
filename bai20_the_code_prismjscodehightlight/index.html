@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>thẻ code, prismjs( chuyển code sang highlight)</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-okaidia.min.css"
+    />
+  </head>
+  <body>
+    <h2>Code trước khi highlight</h2>
+    <h3>Thẻ code</h3>
+    <!-- 
+    - thẻ code là thẻ có ngữ nghĩa, kết hợp với html entitis dùng để xác định 1 đoạn code 
+      để tình duyệt hiểu đó là 1 đoạn mã code
+      vd:   <p> tôi đang học thẻ <code>&lt;em&gt;&lt;/em&gt;</code> và thẻ
+                <code>&lt;strong&gt;&lt;/strong&gt;</code> </p>
+        khi chạy trình duyệt hiểu đoạn " tôi đang học thẻ" đó là 1 đoạn văn vì k nằm trong
+        thẻ code. còn đoạn "<code>&lt;em&gt;&lt;/em&gt;</code>" và đoạn 
+        " <code>&lt;strong&gt;&lt;/strong&gt;</code>" trình duyệt hiểu đó là 1 đoạn mã code
+        - lưu ý: &lt; và &gt; là các định dạng của html entitis
+        
+     
+    - lưu ý nên dùng thẻ code kết hợp với thẻ pre để định dạng code
+    - khi dùng thẻ code kết hợp thẻ pre thì không thụt thẻ code vào trong mà phải để thẻ code
+      nằm cùng bậc với thẻ pre
+      vd:
+    <pre>
+    <code>
+        &lt;meta charset=&quot;UTF-8&quot; /&gt;
+    </code>
+    </pre>
+      -->
+
+    <a href="https://codebeautify.org/html-escape-unescape" target="_blank">
+      linh code beautify dùng để chuẩn hóa code về entitis</a
+    >
+
+    <!-- thẻ code dùng trong đoạn văn  -->
+    <p>
+      tôi đang học thẻ <code>&lt;em&gt;&lt;/em&gt;</code> và thẻ
+      <code>&lt;strong&gt;&lt;/strong&gt;</code>
+    </p>
+
+    <!-- thẻ code trong 1 đoạn đoạn code  -->
+    <pre><code>
+        &lt;head&gt;
+            &lt;meta charset=&quot;UTF-8&quot; /&gt;
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+            &lt;title&gt;thẻ code, prismjs( chuyển code sang highlight)&lt;/title&gt;
+          &lt;/head&gt;
+        </code></pre>
+
+    <h2>Code sau khi highlight</h2>
+    <a href="https://prismjs.com/" target="_blank">link thư viện prismjs</a>
+    <!-- 
+        - B1: Thêm link vào trước thẻ đóng head
+        - B2: thêm class="language-html" vào các thẻ mở code
+        - B3: thêm code sao vào trước thẻ đóng body
+            <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+     -->
+    <p>
+      tôi đang học thẻ
+      <code class="language-html">&lt;em&gt;&lt;/em&gt;</code> và thẻ
+      <code class="language-html">&lt;strong&gt;&lt;/strong&gt;</code>
+    </p>
+    <pre><code class="language-html">
+        &lt;head&gt;
+            &lt;meta charset=&quot;UTF-8&quot; /&gt;
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; /&gt;
+            &lt;title&gt;thẻ code, prismjs( chuyển code sang highlight)&lt;/title&gt;
+          &lt;/head&gt;
+        </code></pre>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-core.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/plugins/autoloader/prism-autoloader.min.js"></script>
+  </body>
+</html>

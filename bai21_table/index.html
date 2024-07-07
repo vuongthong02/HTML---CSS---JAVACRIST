@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bài 20: table</title>
+  </head>
+  <body>
+    <!-- 
+        - Thẻ TABLE: dùng để thiết lập bảng trong web
+        - Thẻ THEAD: dùng để định nghĩa phần đầu của bảng
+          vd:<thead>
+               <tr>
+                    <th>Tên sản phẩm</th>
+                    <th>giá</th>
+               </tr>
+            </thead>
+        - Thẻ TBODY: dùng để định nghĩa phần thân bảng
+          vd:
+            <tbody>
+                 <tr>
+                    <td>quần jean</td>
+                    <td>100.000</td>
+                 </tr>
+            </tbody>
+        - Thẻ TFOOT: dùng định dạng phần cuối của bảng
+           vd: 
+                <tfoot>
+                    <tr>
+                        <td>tổng cộng</td>
+                        <td>300.000</td>
+                    </tr>
+                 </tfoot>
+
+        - Thẻ tr ( table row): Dòng của table
+        - Thẻ td ( table data): Dữ liệu của table (tính theo cột)
+        - Thẻ th ( table heat): Tiêu đề của bảng
+     -->
+    <table>
+      <!-- phần đầu table -->
+      <thead>
+        <tr>
+          <th>Tên sản phẩm</th>
+          <th>Gía</th>
+        </tr>
+      </thead>
+
+      <!-- phần thân table -->
+      <tbody>
+        <!-- dữ liệu dòng 1 -->
+        <tr>
+          <td>Quần jean</td>
+          <td>100.000</td>
+        </tr>
+        <!-- dữ liệu dùng 2 -->
+        <tr>
+          <td>Áo sơ mi</td>
+          <td>200.000</td>
+        </tr>
+      </tbody>
+
+      <!-- phần cuối table -->
+      <tfoot>
+        <tr>
+          <td>tổng</td>
+          <td>300.000</td>
+        </tr>
+      </tfoot>
+    </table>
+    <!-- 
+        LƯU Ý:
+             - Mỗi cặp thẻ <th> </th> gọi là 1 cột
+                  vd: <th> Tên sản phẩm </th>
+                       <th> Gía </th>      
+                    tức là có 2 cột
+             - Mỗi cặp thẻ <tr> </tr> là 1 dòng trong bảng
+             - Mỗi cặp thẻ <td> </td> là dữ liệu của 1 cột
+             - khi nhập dữ liệu phải nhập tuần tự theo thứ tự các cặp <th> </th> 
+               đã khai báo trên phần THEAD  
+     -->
+    <a
+      href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Basics"
+      target="_blank"
+      >link hướng dẫn thẻ table</a
+    >
+
+    <!--  tạo table dùng style mầu sắc -->
+    <table>
+      <colgroup>
+        <col style="background-color: blanchedalmond" span="2" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th>giáo viên</th>
+          <th>giờ dậy</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>giáo viên a</td>
+          <td>1h30 -5h20</td>
+        </tr>
+        <tr>
+          <td>giáo viên b</td>
+          <td>2h30 -5h20</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
